@@ -1,0 +1,82 @@
+{
+    "client_menu": {
+        "category": "client_menu",
+        "moduleMenuName": "ui",
+        "header": {
+            "name": "Client Menu",
+            "toggler": null
+        },
+        "settings": [{
+            "id": "client_menu_theme",
+            "type": "modes",
+            "name": "Theme",
+            "states": [{
+                "name": "Blue",
+                "state": true
+            }, {
+                "name": "Red",
+                "state": false
+            }, {
+                "name": "Green",
+                "state": false
+            }, {
+                "name": "Purple",
+                "state": false
+            }, {
+                "name": "Black",
+                "state": false
+            }, {
+                "name": "Red/Orange",
+                "state": false
+            }, {
+                "name": "Blue/Purple",
+                "state": false
+            }]
+        }]
+    },
+    "active_modules_list": {
+        "category": "active_modules_list",
+        "moduleMenuName": "ui",
+        "header": {
+            "name": "Active modules list",
+            "toggler": {
+                "state": true
+            }
+        },
+        "settings": [{
+            "id": "active_modules_list_text_color",
+            "type": "color",
+            "name": "Text color",
+            "state": "#ffffff"
+        }, {
+            "id": "active_modules_list_rainbow_color",
+            "type": "checkbox",
+            "name": "Rainbow color",
+            "state": false
+        }, {
+            "id": "active_modules_list_text_scale",
+            "type": "range",
+            "name": "Text scale",
+            "state": 1.00,
+            "min": 0.5,
+            "max": 1.35,
+            "step": "any"
+        }, {
+            "id": "active_modules_list_sort_mode",
+            "type": "modes",
+            "name": "Sorting mode",
+            "states": [{
+                "name": "Length",
+                "state": true
+            }, {
+                "name": "Alphabet",
+                "state": false
+            }]
+        }, {
+            "id": "active_modules_list_visible",
+            "type": "checkbox",
+            "name": "Visible",
+            "state": false
+        }]
+    }
+}

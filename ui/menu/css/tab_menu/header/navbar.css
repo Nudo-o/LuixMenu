@@ -1,0 +1,46 @@
+.tab-menu-navbar-list {
+    --gap: 5px;
+
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+}
+
+.tab-menu-navbar-list-item {
+    --text-color: var(--main-text-color);
+    --shadow-color: var(--main-shadow-color);
+
+    --width: 80px;
+    --padding: 5px;
+    --border-radius: 4px;
+    --font-size: 16px;
+
+    --transition-time: .2s;
+
+    width: var(--width);
+
+    color: var(--text-color);
+    font-size: var(--font-size);
+    text-align: center;
+    
+    box-shadow: 0px 0px 2px -1px var(--shadow-color), inset 0px 0px 2px 1px var(--shadow-color);
+
+    padding: var(--padding) !important;
+
+    border-radius: var(--border-radius);
+
+    transition: var(--transition-time) color, var(--transition-time) box-shadow;
+
+    cursor: pointer;
+}
+
+.tab-menu-navbar-list-item:hover,
+.tab-menu-navbar-list-item.is-active {
+    --text-color: var(--main-text-color-hover);
+    --shadow-color: var(--main-shadow-color-hover);
+}
+
+.tab-menu-navbar-list-item:active,
+.tab-menu-navbar-list-item.is-active {
+    transform: scale(.95);
+}

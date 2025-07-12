@@ -1,0 +1,9 @@
+.nav-menu-wrapper {
+    --width: 300px;
+
+    display: flex;
+
+    min-width: var(--width);
+    max-width: var(--width);
+    height: inherit;
+}

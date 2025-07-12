@@ -1,0 +1,37 @@
+.module-menu-box-header-name {
+    display: flex;
+    align-items: center;
+
+    cursor: pointer
+}
+
+.module-menu-box-header-name.has-open-arrow::before {
+    --text-color: var(--main-text-color);
+    --text-color-active: var(--main-text-color-hover);
+
+    --font-size: 18px;
+
+    --rotate-deg: 45deg;
+
+    content: "┓";
+
+    display: block;
+    
+    font-size: var(--font-size);
+    color: var(--text-color);
+    font-weight: 1000;
+
+    transform: rotate(var(--rotate-deg));
+
+    line-height: 0;
+}
+
+.module-menu-box-header-name > span {
+    --text-color: var(--main-text-color);
+    --text-color-active: var(--main-text-color-hover);
+
+    --font-size: 18px;
+
+    color: var(--text-color);
+    font-size: var(--font-size);
+}

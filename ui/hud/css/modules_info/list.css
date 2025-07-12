@@ -1,0 +1,5 @@
+.hud-modules-info-list {
+    display: flex;
+    flex-direction: column;
+    transform-origin: 0 0;
+}

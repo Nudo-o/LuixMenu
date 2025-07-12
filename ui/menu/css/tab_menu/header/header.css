@@ -1,0 +1,50 @@
+.tab-menu-header {
+    --shadow-color: var(--main-shadow-color);
+
+    --border-radius: 8px;
+    --height: 40px;
+    --padding-left-right: 10px;
+    --padding-top-bottom: 5px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: var(--height);
+
+    box-shadow: 0px 0px 5px -1px var(--shadow-color), inset 0px 0px 5px 1px var(--shadow-color);
+
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+
+    padding: var(--padding-top-bottom) var(--padding-left-right);
+}
+
+.tab-menu-header-name {
+    --gap: 5px;
+
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+}
+
+.tab-menu-header-name > span {
+    --text-color: var(--main-text-color);
+
+    --font-size: 18px;
+
+    color: var(--text-color);
+    font-size: var(--font-size);
+}
+
+.tab-menu-header-name-icon {
+    --text-color: var(--main-text-color);
+
+    color: var(--text-color);
+
+    vertical-align: middle;
+}
+
+.search-icon {
+    width: min-content;
+}

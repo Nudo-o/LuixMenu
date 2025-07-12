@@ -1,0 +1,7 @@
+.hud-notifications-list {
+    --gap: 5px;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}

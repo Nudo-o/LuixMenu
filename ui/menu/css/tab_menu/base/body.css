@@ -1,0 +1,41 @@
+.tab-menu-body {
+    --gradient-color-1: var(--main-gradient-color-alpha-1);
+    --gradient-color-2: var(--main-gradient-color-alpha-2);
+    --shadow-color: var(--main-shadow-color);
+
+    --top-offset: 5px;
+    --end-animation-right: 0px;
+    
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    top: calc(var(--top-offset) * -1);
+    right: calc(100% * -1 - 100px);
+    
+    height: calc(100% + var(--top-offset) * 2);
+
+    background: linear-gradient(
+        180deg, 
+        var(--gradient-color-1) 1%, var(--gradient-color-2) 99%
+    );
+
+    box-shadow: 
+    0px 0px 5px 1px var(--shadow-color), 
+    inset 0px 0px 5px 1px var(--shadow-color);
+
+    animation: tab-body-show-animation .2s;
+    animation-fill-mode: forwards;
+
+    pointer-events: all;
+}
+
+@keyframes tab-body-show-animation {
+    0% {
+        right: calc(100% * -1 - 100px);
+    }
+
+    100% {
+        right: var(--end-animation-right);
+    }
+}

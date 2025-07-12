@@ -1,0 +1,109 @@
+.nav-menu-navbar-list-item {
+    --shadow-color: var(--main-shadow-color);
+    --shadow-color-hover: var(--main-shadow-color-hover);
+
+    --width: 200px;
+    --height: 30px;
+    --padding-top-bottom: 5px;
+    --padding-left-right: 10px;
+    --translate-x: -10px;
+    --border-radius: 4px;
+    --gap: 5px;
+    
+    --transition-time: .15s;
+
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+
+    width: var(--width);
+    height: var(--height);
+
+    padding: var(--padding-top-bottom) var(--padding-left-right) !important;
+
+    transform: translateX(var(--translate-x));
+
+    box-shadow: 
+    0px 0px 5px 1px var(--shadow-color), 
+    inset 0px 0px 5px 1px var(--shadow-color);
+
+    border-radius: var(--border-radius);
+
+    transition:
+    var(--transition-time) box-shadow, 
+    var(--transition-time) transform;
+
+    cursor: pointer;
+}
+
+.nav-menu-navbar-list-item:hover,
+.nav-menu-navbar-list-item.is-active {
+    --shadow-color: var(--shadow-color-hover);
+
+    transform: translateX(0px);
+}
+
+.nav-menu-navbar-list-item::after {
+    --text-color: var(--main-text-color);
+    --text-color-active: var(--main-text-color-hover);
+
+    --font-size: 18px;
+
+    --rotate-deg: 45deg;
+
+    content: "┓";
+
+    display: block;
+
+    position: relative;
+
+    margin-left: auto;
+    
+    font-size: var(--font-size);
+    color: var(--text-color);
+    font-weight: 1000;
+
+    transform: rotate(var(--rotate-deg));
+
+    line-height: 0;
+    opacity: 0;
+}
+
+.nav-menu-navbar-list-item:hover::after, 
+.nav-menu-navbar-list-item.is-active::after {
+    opacity: 1;
+}
+
+.nav-menu-navbar-list-item:active::after,
+.nav-menu-navbar-list-item.is-active::after {
+    --text-color: var(--text-color-active);
+}
+
+.nav-menu-navbar-list-item > span {
+    --text-color: var(--main-text-color);
+    --text-color-active: var(--main-text-color-hover);
+
+    --font-size: 18px;
+
+    color: var(--text-color);
+    font-size: var(--font-size);
+}
+
+.nav-menu-navbar-list-item:active > span, 
+.nav-menu-navbar-list-item.is-active > span {
+    --text-color: var(--text-color-active);
+}
+
+.nav-menu-navbar-list-item-icon {
+    --text-color: var(--main-text-color);
+    --text-color-active: var(--main-text-color-hover);
+
+    color: var(--text-color);
+
+    vertical-align: middle;
+}
+
+.nav-menu-navbar-list-item:active > .nav-menu-navbar-list-item-icon,
+.nav-menu-navbar-list-item.is-active > .nav-menu-navbar-list-item-icon {
+    --text-color: var(--text-color-active);
+}

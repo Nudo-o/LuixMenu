@@ -1,0 +1,45 @@
+.nav-menu-body {
+    --gradient-color-1: var(--main-gradient-color-alpha-1);
+    --gradient-color-2: var(--main-gradient-color-alpha-2);
+    --shadow-color: var(--main-shadow-color);
+
+    --gap: 50px;
+    --width: 300px;
+    --top-offset: 5px;
+    --end-animation-left: 50px;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+
+    position: absolute;
+    top: calc(var(--top-offset) * -1);
+    left: calc(var(--width) * -1);
+
+    width: var(--width);
+    height: calc(100% + var(--top-offset) * 2);
+
+    background: linear-gradient(
+        180deg, 
+        var(--gradient-color-1) 1%, var(--gradient-color-2) 99%
+    );
+
+    box-shadow: 
+    0px 0px 5px 1px var(--shadow-color), 
+    inset 0px 0px 5px 1px var(--shadow-color);
+
+    pointer-events: all;
+
+    animation: nav-body-show-animation .2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes nav-body-show-animation {
+    0% {
+        left: calc(var(--width) * -1);
+    }
+
+    100% {
+        left: var(--end-animation-left);
+    }
+}

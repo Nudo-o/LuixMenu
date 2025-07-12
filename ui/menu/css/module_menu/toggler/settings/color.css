@@ -1,0 +1,52 @@
+.module-setting-color {
+    --shadow-color: var(--main-shadow-color);
+
+    --width: 55px;
+    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    padding: 0;
+    overflow: hidden;
+    outline: none;
+
+    width: var(--width);
+
+    background-color: transparent;
+
+    cursor: pointer;
+
+    filter: 
+    drop-shadow(0px 0px 1px var(--shadow-color)) 
+    drop-shadow(0px 0px 1px var(--shadow-color));
+}
+
+.module-setting-color::-webkit-color-swatch-wrapper {
+    padding: 0;
+  }
+  
+.module-setting-color::-webkit-color-swatch {
+    --border-radius: 6px;
+
+    border: none;
+
+    border-radius: var(--border-radius);
+}
+  
+.module-setting-color::-moz-focus-inner {
+    --border-radius: 6px;
+
+    border: none;
+    padding: 0;
+    
+    border-radius: var(--border-radius);
+}
+  
+.module-setting-color::-moz-color-swatch {
+    --border-radius: 6px;
+
+    border: none;
+    
+    border-radius: var(--border-radius);
+}

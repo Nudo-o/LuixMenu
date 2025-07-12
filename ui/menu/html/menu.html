@@ -1,0 +1,148 @@
+<container class="menu-holder hidden" id="menu_holder" colorshema="blue" style="z-index: 9999999999999999999999;">
+    <box class="nav-menu-wrapper">
+        <main class="nav-menu-body">
+            <header class="nav-menu-header">
+                <span class="nav-menu-header-logo">LUIX</span>
+            </header>
+
+            <container class="nav-menu-container">
+                <ul class="nav-menu-navbar-list" id="nav_tab_btns">
+                    <li class="nav-menu-navbar-list-item is-active" data-nav-tabname="general">
+                        <i class="nav-menu-navbar-list-item-icon material-icons">apps</i>
+
+                        <span>General</span>
+                    </li>
+
+                    <li class="nav-menu-navbar-list-item" data-nav-tabname="settings">
+                        <i class="nav-menu-navbar-list-item-icon material-icons">settings</i>
+
+                        <span>Settings</span>
+                    </li>
+
+                    <li class="nav-menu-navbar-list-item" data-nav-tabname="binds">
+                        <i class="nav-menu-navbar-list-item-icon material-icons">keyboard</i>
+
+                        <span>Binds</span>
+                    </li>
+
+                    <li class="nav-menu-navbar-list-item" data-nav-tabname="texture_pack">
+                        <i class="nav-menu-navbar-list-item-icon material-icons">texture</i>
+
+                        <span>Texture Pack</span>
+                    </li>
+
+                    <li class="nav-menu-navbar-list-item" data-nav-tabname="configuration">
+                        <i class="nav-menu-navbar-list-item-icon material-icons">wifi_protected_setup</i>
+
+                        <span>Configuration</span>
+                    </li>
+                </ul>
+            </container>
+        </mai>
+    </box>
+
+    <box class="tab-menu-wrapper" data-tabname="general">
+        <main class="tab-menu-body">
+            <header class="tab-menu-header">
+                <div class="tab-menu-header-name">
+                    <i class="tab-menu-header-name-icon material-icons">apps</i>
+
+                    <span>General</span>
+                </div>
+
+                <ul class="tab-menu-navbar-list">
+                    <li class="tab-menu-navbar-list-item is-active" data-nav-m-menuname="search">Search</li>
+                    <li class="tab-menu-navbar-list-item" data-nav-m-menuname="ui">UI</li>
+                    <li class="tab-menu-navbar-list-item" data-nav-m-menuname="about">About</li>
+                </ul>
+            </header>
+
+            <container class="module-menu-container" data-m-menuname="search">
+                <box class="module-menu-category" id="search_category" style="flex-direction: row;">
+                    <i class="nav-menu-navbar-list-item-icon search-icon material-icons">search</i>
+
+                    <input class="module-setting-input search-input" id="search_input" placeholder="Enter the module name...">
+                </box>
+            </container>
+
+            <container class="module-menu-container hidden" data-m-menuname="ui"></container>
+
+            <container class="module-menu-container hidden" data-m-menuname="about"></container>
+        </main>
+    </box>
+
+    <box class="tab-menu-wrapper hidden" data-tabname="settings">
+        <main class="tab-menu-body">
+            <header class="tab-menu-header">
+                <div class="tab-menu-header-name">
+                    <i class="tab-menu-header-name-icon material-icons">settings</i>
+
+                    <span>Settings</span>
+                </div>
+
+                <ul class="tab-menu-navbar-list">
+                    <li class="tab-menu-navbar-list-item is-active" data-nav-m-menuname="combat">Combat</li>
+                    <li class="tab-menu-navbar-list-item" data-nav-m-menuname="movement">Movement</li>
+                    <li class="tab-menu-navbar-list-item" data-nav-m-menuname="player">Player</li>
+                    <li class="tab-menu-navbar-list-item" data-nav-m-menuname="misc">Misc</li>
+                    <li class="tab-menu-navbar-list-item" data-nav-m-menuname="render">Render</li>
+                </ul>
+            </header>
+
+            <container class="module-menu-container" data-m-menuname="combat"></container>
+
+            <container class="module-menu-container hidden" data-m-menuname="movement"></container>
+
+            <container class="module-menu-container hidden" data-m-menuname="player"></container>
+
+            <container class="module-menu-container hidden" data-m-menuname="misc"></container>
+
+            <container class="module-menu-container hidden" data-m-menuname="render"></container>
+        </main>
+    </box>
+
+    <box class="tab-menu-wrapper hidden" data-tabname="binds">
+        <main class="tab-menu-body">
+            <header class="tab-menu-header">
+                <div class="tab-menu-header-name">
+                    <i class="tab-menu-header-name-icon material-icons">keyboard</i>
+
+                    <span>Binds</span>
+                </div>
+
+                <ul class="tab-menu-navbar-list">
+                    <li class="tab-menu-navbar-list-item is-active" data-nav-m-menuname="client_binds">Client</li>
+                    <li class="tab-menu-navbar-list-item" data-nav-m-menuname="game_binds">Game</li>
+                </ul>
+            </header>
+
+            <container class="module-menu-container" data-m-menuname="client_binds"></container>
+
+            <container class="module-menu-container hidden" data-m-menuname="game_binds"></container>
+        </main>
+    </box>
+
+    <box class="tab-menu-wrapper hidden" data-tabname="texture_pack">
+        <main class="tab-menu-body">
+            <header class="tab-menu-header">
+                <div class="tab-menu-header-name">
+                    <i class="tab-menu-header-name-icon material-icons">texture</i>
+
+                    <span>Texture Pack</span>
+                </div>
+            </header>
+        </main>
+    </box>
+
+    <box class="tab-menu-wrapper hidden" data-tabname="configuration">
+        <main class="tab-menu-body">
+            <header class="tab-menu-header">
+                <div class="tab-menu-header-name">
+                    <i class="tab-menu-header-name-icon material-icons">wifi_protected_setup</i>
+
+                    <span>Configuration</span>
+                </div>
+            </header>
+        </main>
+    </box>
+</container>

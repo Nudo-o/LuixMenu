@@ -1,0 +1,49 @@
+.hidden {
+    display: none !important;
+}
+
+.menu-holder {
+    --gradient-color-1: var(--main-gradient-color-1);
+    --gradient-color-2: var(--main-gradient-color-2);
+
+    --padding-left-right: 50px;
+    --gap: 50px;
+
+    --deg-gradient-1: 155deg;
+    --deg-gradient-2: 20deg;
+
+    display: flex;
+    justify-content: space-between;
+    gap: var(--gap);
+    
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: 
+    linear-gradient(
+        var(--deg-gradient-1),
+        var(--gradient-color-1), transparent
+    ), 
+    linear-gradient(
+        var(--deg-gradient-2), 
+        var(--gradient-color-2), transparent
+    );
+
+    padding: 0 var(--padding-left-right);
+
+    z-index: 999999;
+    pointer-events: none;
+    box-sizing: border-box;
+}
+
+.menu-holder ul, 
+.menu-holder li {
+    margin: 0;
+    padding: 0;
+
+    text-decoration: none;
+    list-style: none;
+}

@@ -1,0 +1,32 @@
+.module-setting-keybind {
+    --text-color: var(--main-text-color);
+    --border-color: var(--main-border-color);
+
+    --width: 65px;
+    --font-size: 16px;
+
+    --transition-time: .15s;
+    
+    outline: 0;
+    border: none;
+    background: none;
+
+    width: var(--width);
+
+    color: var(--text-color);
+    font-size: var(--font-size);
+    text-align: center;
+
+    border-bottom: 2px solid var(--border-color);
+
+    transition: var(--transition-time) border;
+}
+
+.module-setting-keybind:focus {
+    --text-color: var(--main-text-color-hover);
+    --border-color: var(--main-border-color-hover);
+}
+
+.module-setting-keybind::placeholder {
+    color: var(--main-placehorder-color);
+}

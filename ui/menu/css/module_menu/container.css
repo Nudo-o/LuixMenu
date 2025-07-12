@@ -1,0 +1,24 @@
+.module-menu-container {
+    --padding: 50px;
+    --gap: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap);
+
+    width: 100%;
+    height: 100%;
+
+    padding: var(--padding) var(--padding) calc(var(--padding) + 5px) var(--padding);
+
+    box-sizing: border-box;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.module-menu-container::-webkit-scrollbar {
+    width: 0px;
+    display: none;
+}

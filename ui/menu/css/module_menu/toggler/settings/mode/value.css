@@ -1,0 +1,8 @@
+.module-setting-mode-value {
+    --text-color: var(--main-text-color);
+
+    --font-size: 16px;
+
+    color: var(--text-color);
+    font-size: var(--font-size);
+}

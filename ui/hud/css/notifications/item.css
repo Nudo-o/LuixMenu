@@ -1,0 +1,80 @@
+.hud-notification-item {
+    --bg-color: var(--main-hud-notifications-bg-color);
+
+    --gap: 5px;
+    --width: 225px;
+    --height: 40px;
+    --border-radius: 4px;
+    --padding-left-right: 6px;
+    --border-size: 3px;
+
+    --padding-top-bottom: 0;
+
+    --animation-time: calc(var(--main-hud-hide-notification-time) - 5s);
+
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+
+    width: max-content;
+    height: var(--height);
+
+    background-color: var(--bg-color);
+
+    border-radius: var(--border-radius);
+
+    padding: var(--padding-top-bottom) var(--padding-left-right) !important;
+
+    animation: hide-notification-anim var(--animation-time);
+    animation-fill-mode: forwards;
+}
+
+.hud-notification-item[type="disabled"] {
+    border-left: var(--border-size) solid #ad2020;
+}
+
+.hud-notification-item[type="disabled"] .hud-notification-header span:last-child {
+    color: #ad2020 !important;
+}
+
+.hud-notification-item[type="enabled"] {
+    border-left: var(--border-size) solid #20ad20;
+}
+
+.hud-notification-item[type="enabled"] .hud-notification-header span:last-child {
+    color: #20ad20 !important;
+}
+
+.hud-notification-item[type="debug"] {
+    border-left: var(--border-size) solid #7dbec9;
+}
+
+.hud-notification-item[type="debug"] .hud-notification-header span:last-child {
+    color: #7dbec9 !important;
+}
+
+@keyframes hide-notification-anim {
+    0% {        
+        opacity: 0;
+
+        transform: translateX(-50%);
+    }
+
+    10% {
+        transform: translateX(0%);
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    85% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+
+        display: none;
+    }
+}

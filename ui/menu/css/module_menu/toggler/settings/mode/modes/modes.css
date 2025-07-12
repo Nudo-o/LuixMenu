@@ -1,0 +1,6 @@
+.module-setting-mode-modes-wrapper {
+    --gap: 2px;
+
+    display: flex;
+    gap: var(--gap);
+}

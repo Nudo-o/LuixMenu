@@ -1,0 +1,22 @@
+.module-setting-mode-modes-item {
+    --bg-color: var(--main-modes-item-bg-color);
+
+    --top: 2px;
+    --width: 12.5px;
+    --height: 2px;
+    --border-radius: 20px;
+
+    position: relative;
+    top: calc(var(--top) * -1);
+
+    width: var(--width);
+    height: var(--height);
+
+    background: var(--bg-color);
+
+    border-radius: var(--border-radius);
+}
+
+.module-setting-mode-modes-item.is-active {
+    --bg-color: var(--main-modes-item-bg-color-hover);
+}

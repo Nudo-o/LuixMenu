@@ -1,0 +1,5 @@
+.hud-modules-info-item {
+    --font-size: 16px;
+
+    font-size: var(--font-size);
+}

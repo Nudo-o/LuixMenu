@@ -1,0 +1,41 @@
+.module-menu-header-toggler {
+    --text-color: var(--main-text-color);
+    --shadow-color: var(--main-shadow-color);
+
+    --width: 100px;
+    --font-size: 18px;
+    --padding: 4px;
+    --border-radius: 4px;
+
+    --transition-time: .2s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: var(--width);
+
+    color: var(--text-color);
+    font-size: var(--font-size);
+    text-align: center;
+
+    box-shadow: 0px 0px 2px -1px var(--shadow-color), inset 0px 0px 2px 1px var(--shadow-color);
+
+    padding: var(--padding);
+
+    border-radius: var(--border-radius);
+    
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.module-menu-header-toggler:active {
+    --text-color: var(--main-text-color-hover);
+    --shadow-color: var(--main-shadow-color-hover);
+    
+    transform: scale(.95);
+}
+
+.module-menu-header-toggler::before {
+    content: "Disabled";
+}

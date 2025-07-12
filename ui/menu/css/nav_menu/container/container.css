@@ -1,0 +1,9 @@
+.nav-menu-container {
+    --gap: 25px;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+
+    width: 100%;
+}

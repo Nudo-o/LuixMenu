@@ -1,0 +1,134 @@
+.module-setting-range {
+    --width: 135px;
+    --border-radius: 16px;
+    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; 
+    outline: none;
+
+    width: var(--width);
+
+    border-radius: var(--border-radius);
+
+    background: none;
+    background-color: none;
+
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.module-setting-range-value {
+    --shadow-color: var(--main-shadow-color);
+    --text-color: var(--main-text-color);
+
+    --height: 18px;
+    --font-size: 14px;
+    --padding: 2.5px;
+    --border-radius: 4px;
+
+    --transition-time: .2s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: min-content;
+    height: var(--height);
+
+    color: var(--text-color);
+    font-size: var(--font-size);
+
+    padding: var(--padding);
+
+    box-shadow: 0px 0px 2px -1px var(--shadow-color), inset 0px 0px 2px 1px var(--shadow-color);
+    
+    border-radius: var(--border-radius);
+
+    transition: var(--transition-time) all;
+
+    cursor: default;
+    box-sizing: border-box;
+}
+
+.module-setting-range-value::before {
+    content: attr(value);
+}
+
+.module-setting-range:hover::after {
+    --shadow-color: var(--main-shadow-color-hover);
+    --text-color: var(--main-text-color-hover);
+}
+  
+.module-setting-range::-webkit-slider-runnable-track {
+    --bg-color: var(--main-range-bg-color);
+
+    --height: 10px;
+    --border-radius: 16px;
+
+    height: var(--height);
+
+    background: var(--bg-color);
+
+    border-radius: var(--border-radius);
+}
+  
+.module-setting-range::-moz-range-track {
+    --bg-color: var(--main-range-bg-color-2);
+
+    --height: 10px;
+    --border-radius: 16px;
+
+    height: var(--height);
+
+    background: var(--bg-color);
+
+    border-radius: var(--border-radius);
+}
+  
+.module-setting-range::-webkit-slider-thumb {
+    --bg-color: var(--main-range-bg-color-2);
+    --border-color: var(--main-range-border-color);
+    --shadow-color: var(--main-range-shadow-color);
+
+    --width: 10px;
+    --height: 10px;
+
+    --border-radius: 50%;
+
+    -webkit-appearance: none;
+    appearance: none; 
+
+    width: var(--height);
+    height: var(--width);
+
+    background-color: var(--bg-color);
+
+    border-radius: var(--border-radius);
+
+    border: 2px solid var(--border-color);
+
+    box-shadow: -407px 0 0 400px var(--shadow-color);
+}
+  
+.module-setting-range::-moz-range-thumb {
+    --bg-color: var(--main-range-bg-color);
+    --border-color: var(--main-range-border-color);
+    --shadow-color: var(--main-range-shadow-color);
+
+    --width: 10px;
+    --height: 10px;
+
+    --border-radius: 50%;
+
+    width: var(--height);
+    height: var(--width);
+
+    background-color: var(--bg-color);
+
+    border-radius: var(--border-radius);
+
+    border: 2px solid var(--border-color);
+
+    box-shadow: -407px 0 0 400px var(--shadow-color);
+}

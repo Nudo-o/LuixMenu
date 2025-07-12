@@ -1,0 +1,23 @@
+.module-menu-category:not(.is-open) .module-settings-wrapper {
+    display: none !important;
+}
+
+.module-menu-category.is-open .module-settings-wrapper {
+    display: flex !important;
+}
+
+.module-menu-category.is-active,
+.module-menu-category.is-active .module-menu-header-toggler,
+.module-menu-category.is-active .module-menu-box-header-name > span,
+.module-menu-category.is-active .module-menu-box-header-name::before {
+    --text-color: var(--main-text-color-hover);
+    --shadow-color: var(--main-shadow-color-hover);
+}
+
+.module-menu-category.is-open .module-menu-box-header-name::before {
+    transform: rotate(135deg) translateX(2px);
+}
+
+.module-menu-category.is-active .module-menu-header-toggler::before {
+    content: "Enabled";
+}

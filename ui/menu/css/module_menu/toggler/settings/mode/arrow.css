@@ -1,0 +1,44 @@
+.module-setting-mode-arrow {
+    cursor: pointer;
+}
+
+.module-setting-mode-arrow:active {
+    transform: scale(.95);
+}
+
+.module-setting-mode-arrow:hover::before {
+    --text-color: var(--main-text-color-hover);
+}
+
+.module-setting-mode-arrow::before {
+    --text-color: var(--main-text-color);
+    --text-color-active: var(--main-text-color-hover);
+
+    --font-size: 18px;
+
+    --rotate-deg: 0deg;
+
+    --transition-time: .2s;
+
+    content: "┓";
+
+    display: block;
+    
+    font-size: var(--font-size);
+    color: var(--text-color);
+    font-weight: 1000;
+
+    transform: rotate(var(--rotate-deg));
+
+    transition: var(--transition-time) color;
+
+    line-height: 0;
+}
+
+.module-setting-mode-arrow.arrow-left::before {
+    --rotate-deg: 225deg;
+}
+
+.module-setting-mode-arrow.arrow-right::before {
+    --rotate-deg: 45deg;
+}

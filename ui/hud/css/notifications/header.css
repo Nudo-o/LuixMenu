@@ -1,0 +1,12 @@
+.hud-notification-header {
+    --text-color: #ffffff;
+
+    --gap: 5px;
+    --font-size: 16px;
+
+    display: flex;
+    gap: var(--gap);
+
+    color: var(--text-color);
+    font-size: var(--font-size);
+}

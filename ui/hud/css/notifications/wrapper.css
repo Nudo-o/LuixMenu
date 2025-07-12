@@ -1,0 +1,8 @@
+.hud-notifications-wrapper {
+    --top: 20px;
+    --left: 20px;
+
+    position: absolute;
+    top: var(--top);
+    left: var(--left);
+}

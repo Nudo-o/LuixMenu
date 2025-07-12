@@ -1,0 +1,10 @@
+.module-settings-wrapper {
+    --gap: 5px;
+    --padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+
+    padding: var(--padding) !important;
+}
